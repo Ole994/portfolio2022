@@ -1,13 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  min-height: 100vh;
-}
-
 .navigation {
   position: fixed;
   width: 60px;
@@ -45,7 +35,7 @@ navigation:active {
   width: 100%;
   display: flex;
   text-decoration: none;
-  color: #0e0a0a;
+  color: rgb(14, 10, 10);
 }
 
 .navigation ul li a .icon {
@@ -77,6 +67,7 @@ navigation:active {
   right: 0;
   width: 60px;
   height: 60px;
+
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -96,6 +87,7 @@ navigation:active {
 }
 
 .toggle:before {
+  //content: "\f0c9";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -105,4 +97,6 @@ navigation:active {
   color: #fff;
 }
 
-/*# sourceMappingURL=output.css.map */
+.toggle:hover:before {
+  //content: "\f00d";
+}

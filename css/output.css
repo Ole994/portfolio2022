@@ -10,6 +10,62 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  top: 80px;
+}
+.h1Home h1 {
+  font-size: 30px;
+  color: white;
+}
+
+.profileImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 70px;
+}
+
+.dressImage {
+  width: 200px;
+  border-radius: 100%;
+}
+
+.introText {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 90px;
+}
+
+.shortDescription {
+  color: white;
+}
+
+.blogImage {
+  width: 100%;
+}
+
+.imageAndDescription p {
+  color: white;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 756px) {
+  .h1Home h1 {
+    font-size: 40px;
+  }
+
+  .shortDescription {
+    font-size: 25px;
+  }
+
+  .imageAndDescription {
+    width: 40%;
+  }
+}
+body {
+  background-color: #212529;
 }
 
 * {
@@ -21,6 +77,7 @@
 span,
 p {
   font-family: "Inconsolata", monospace;
+  color: white;
 }
 
 h1,
@@ -32,10 +89,11 @@ h3 {
 .navigation {
   position: fixed;
   width: 60px;
-  height: 71%;
+  height: 70%;
   background: lightcyan;
   transition: 0.5s;
   overflow: hidden;
+  z-index: 9;
 }
 
 .navigation ul {
@@ -120,6 +178,49 @@ h3 {
   text-align: center;
   font-size: 24px;
   color: #fff;
+}
+
+@media screen and (max-width: 756px) {
+  .toggle {
+    width: 50px;
+    height: 50px;
+  }
+
+  .navigation {
+    width: 100%;
+    z-index: 9;
+  }
+}
+.footerHigh {
+  margin-top: 40px;
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footerHigh a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+.footerLow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.footerLow p {
+  font-size: 25px;
+}
+
+.footerWrap {
+  background-color: #272c31;
 }
 
 /*# sourceMappingURL=output.css.map */

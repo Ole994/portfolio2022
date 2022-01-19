@@ -1,15 +1,16 @@
 .navigation {
   position: fixed;
   width: 60px;
-  height: 71%;
+  height: 70%;
   background: lightcyan;
   transition: 0.5s;
   overflow: hidden;
+  z-index: 9;
 }
 
 // .navigation:hover,
 // :active {
-//   width: 300px;
+//   width: 100%;
 // }
 
 .navigation ul {
@@ -99,4 +100,16 @@
 
 .toggle:hover:before {
   //content: "\f00d";
+}
+
+@media screen and (max-width: 756px) {
+  .toggle {
+    width: 50px;
+    height: 50px;
+  }
+
+  .navigation {
+    width: 100%;
+    z-index: 9;
+  }
 }

@@ -2,9 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  //fontFamily
 }
 
-body {
-  min-height: 100vh;
+span,
+p {
+  font-family: "Inconsolata", monospace;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Outfit", sans-serif;
 }

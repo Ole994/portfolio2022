@@ -1,16 +1,16 @@
 .navigation {
   position: fixed;
   width: 60px;
-  height: 100%;
+  height: 71%;
   background: lightcyan;
   transition: 0.5s;
   overflow: hidden;
 }
 
-.navigation:hover,
-navigation:active {
-  width: 300px;
-}
+// .navigation:hover,
+// :active {
+//   width: 300px;
+// }
 
 .navigation ul {
   position: absolute;
@@ -67,18 +67,18 @@ navigation:active {
   right: 0;
   width: 60px;
   height: 60px;
-
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: black;
 }
 
 .line {
-  width: 40px;
-  height: 4px;
-  background: black;
+  width: 30px;
+  height: 3px;
+  background: white;
   margin: 5px;
 }
 

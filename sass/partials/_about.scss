@@ -1,0 +1,38 @@
+//header nature
+
+.natureBackground {
+  background-image: url(/images/nature-portfolio-pixlr.jpg);
+  height: 100vh;
+
+  background-position: center;
+  background-size: cover;
+  box-shadow: rgba(30, 127, 218, 0.774) 1.95px 1.95px 2.6px;
+}
+
+.aboutHeader {
+  display: flex;
+  justify-content: center;
+}
+
+.natureImage {
+  display: flex;
+  justify-content: center;
+}
+
+.woodImage {
+  border-radius: 10px;
+  height: 300px;
+  width: 100%;
+}
+.loremTextAbout {
+  p {
+    width: 90%;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 756px) {
+  .woodImage {
+    width: 400px;
+  }
+}

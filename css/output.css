@@ -42,13 +42,36 @@
   color: white;
 }
 
+.h2Home {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.mainContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ProjectWrapeer {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  flex-direction: column;
+}
+
 .blogImage {
   width: 100%;
 }
 
 .imageAndDescription p {
   color: white;
+}
+
+.loremP {
+  margin-bottom: 70px;
   margin-top: 10px;
+  border-bottom: 2px solid white;
 }
 
 @media screen and (min-width: 756px) {
@@ -60,10 +83,22 @@
     font-size: 25px;
   }
 
-  .imageAndDescription {
-    width: 40%;
+  .ProjectWrapeer {
+    flex-direction: row;
+  }
+
+  .loremP {
+    border-bottom: none;
+  }
+
+  .blogImage {
+    width: 300px;
   }
 }
+.mainContent {
+  background-color: #5b6f85;
+}
+
 body {
   background-color: #212529;
 }
@@ -84,16 +119,27 @@ h1,
 h2,
 h3 {
   font-family: "Outfit", sans-serif;
+  color: white;
+}
+
+body {
+  position: relative;
 }
 
 .navigation {
-  position: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 60px;
   height: 70%;
-  background: lightcyan;
+  background: #478686;
   transition: 0.5s;
   overflow: hidden;
   z-index: 9;
+}
+
+.navigation:hover {
+  width: 250px;
 }
 
 .navigation ul {
@@ -105,7 +151,6 @@ h3 {
 
 .navigation ul li {
   position: relative;
-  width: 100%;
   list-style-type: none;
 }
 
@@ -116,7 +161,6 @@ h3 {
 .navigation ul li a {
   position: relative;
   display: block;
-  width: 100%;
   display: flex;
   text-decoration: none;
   color: #0e0a0a;
@@ -135,10 +179,13 @@ h3 {
   font-size: 24px;
 }
 
+.icon {
+  color: black;
+}
+
 .navigation ul li a .title {
   position: relative;
   display: block;
-  padding: 0 10px;
   height: 60px;
   line-height: 60px;
   text-align: start;
@@ -172,12 +219,14 @@ h3 {
 
 .toggle:before {
   position: absolute;
-  width: 100%;
-  height: 100%;
   line-height: 60px;
   text-align: center;
   font-size: 24px;
   color: #fff;
+}
+
+.navigation .open {
+  width: 200px;
 }
 
 @media screen and (max-width: 756px) {
@@ -187,8 +236,12 @@ h3 {
   }
 
   .navigation {
-    width: 100%;
+    width: 50px;
     z-index: 9;
+  }
+
+  .navigation:hover {
+    width: 75%;
   }
 }
 .footerHigh {

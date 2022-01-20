@@ -10,7 +10,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   position: relative;
   top: 80px;
   h1 {
@@ -43,21 +42,23 @@
   color: white;
 }
 
+//////////////////////
+.h2Home {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
 .mainContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .ProjectWrapeer {
-  // display: grid;
-
-  // margin-top: 40px;
-  // grid-template-columns: repeat(auto-fit, minmax(300px, 1f, 1fr, 1fr));
-}
-
-.projectDescription {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   flex-direction: column;
+  display: flex;
+  width: 70%;
+  align-items: center;
+  flex-direction: column;
 }
 
 .blogImage {
@@ -67,8 +68,13 @@
 .imageAndDescription {
   p {
     color: white;
-    margin-top: 10px;
   }
+}
+
+.loremP {
+  margin-bottom: 70px;
+  margin-top: 10px;
+  border-bottom: 2px solid white;
 }
 
 @media screen and (min-width: 756px) {
@@ -81,10 +87,23 @@
   .shortDescription {
     font-size: 25px;
   }
-  .imageAndDescription {
-    width: 40%;
+
+  .ProjectWrapeer {
+    flex-direction: row;
+  }
+  .loremP {
+    border-bottom: none;
+  }
+
+  .blogImage {
+    width: 300px;
   }
 }
+
+.mainContent {
+  background-color: #5b6f85;
+}
+
 body {
   background-color: #212529;
 }

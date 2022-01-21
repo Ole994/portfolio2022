@@ -2,37 +2,66 @@
 
 .natureBackground {
   background-image: url(/images/nature-portfolio-pixlr.jpg);
-  height: 100vh;
-
+  height: 50vh;
+  background-color: rgb(0, 0, 0);
   background-position: center;
   background-size: cover;
-  box-shadow: rgba(30, 127, 218, 0.774) 1.95px 1.95px 2.6px;
 }
 
 .aboutHeader {
   display: flex;
   justify-content: center;
+
+  h1 {
+    margin-top: 100px;
+    font-size: 40px;
+  }
 }
 
 .natureImage {
   display: flex;
   justify-content: center;
+  margin-top: 40px;
 }
 
 .woodImage {
   border-radius: 10px;
   height: 300px;
-  width: 100%;
+  width: 300px;
 }
 .loremTextAbout {
   p {
-    width: 90%;
     margin-left: 10px;
+    padding: 35px;
   }
+}
+
+.descriptionOle {
+  h3 {
+    margin-left: 35px;
+  }
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background-color: rgba(0, 0, 0, 0.116);
+  margin-top: 40px;
+  margin-top: 50px;
+  padding: 20px;
 }
 
 @media screen and (min-width: 756px) {
   .woodImage {
     width: 400px;
+  }
+  .aboutHeader {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+
+    h1 {
+      font-size: 80px;
+    }
   }
 }

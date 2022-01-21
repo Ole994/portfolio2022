@@ -305,7 +305,7 @@ body {
 }
 
 .toggle:hover {
-  background: lightgreen;
+  background-color: rgba(255, 255, 255, 0.055);
 }
 
 .toggle:before {
@@ -377,6 +377,12 @@ body {
 
 .footerWrap {
   background-color: #272c31;
+}
+
+@media screen and (max-width: 756px) {
+  .footerWrap .title {
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */

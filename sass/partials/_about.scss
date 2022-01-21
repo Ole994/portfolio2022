@@ -52,6 +52,8 @@
 }
 
 @media screen and (min-width: 756px) {
+  .about-container {
+  }
   .woodImage {
     width: 400px;
   }
@@ -63,5 +65,8 @@
     h1 {
       font-size: 80px;
     }
+  }
+
+  .itemContainer {
   }
 }

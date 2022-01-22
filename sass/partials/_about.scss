@@ -31,24 +31,21 @@
 }
 .loremTextAbout {
   p {
-    margin-left: 10px;
     padding: 35px;
+    line-height: 30px;
   }
 }
 
 .descriptionOle {
   h3 {
+    margin-top: 20px;
     margin-left: 35px;
   }
 }
 
 .about-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  background-color: rgba(0, 0, 0, 0.116);
-  margin-top: 40px;
-  margin-top: 50px;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 756px) {
@@ -67,6 +64,24 @@
     }
   }
 
-  .itemContainer {
+  .imageAndText {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .woodImage {
+    height: 500px;
+    width: 500px;
+    border-radius: 0;
+  }
+
+  .loremTextAbout {
+    p {
+      width: 500px;
+    }
+
+    h3 {
+      font-size: 40px;
+    }
   }
 }

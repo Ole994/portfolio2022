@@ -29,7 +29,7 @@
   height: 300px;
   width: 300px;
 }
-.loremTextAbout {
+.descriptionTextAbout {
   p {
     padding: 35px;
     line-height: 30px;
@@ -48,40 +48,54 @@
   flex-direction: column;
 }
 
-@media screen and (min-width: 756px) {
-  .about-container {
-  }
-  .woodImage {
-    width: 400px;
-  }
-  .aboutHeader {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-
-    h1 {
-      font-size: 80px;
-    }
-  }
-
+@media screen and (min-width: 750px) {
   .imageAndText {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+  }
+  .descriptionTextAbout {
+    p {
+      width: 400px;
+    }
   }
 
   .woodImage {
-    height: 500px;
-    width: 500px;
-    border-radius: 0;
+    width: 300px;
+    height: 300px;
+    margin-left: 80px;
   }
+}
 
-  .loremTextAbout {
-    p {
+@media screen and (min-width: 900px) {
+  .about-container {
+    display: flex;
+    justify-content: space-around;
+
+    .aboutHeader {
+      display: flex;
+      justify-content: center;
+
+      h1 {
+        font-size: 80px;
+      }
+    }
+
+    .woodImage {
       width: 500px;
+      height: 300px;
     }
 
     h3 {
       font-size: 40px;
     }
+  }
+
+  .line {
+    border: 2px solid white;
+    position: relative;
+    left: 55%;
+
+    transform: rotate(90deg);
   }
 }

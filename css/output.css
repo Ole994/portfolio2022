@@ -182,7 +182,7 @@ body {
   width: 300px;
 }
 
-.loremTextAbout p {
+.descriptionTextAbout p {
   padding: 35px;
   line-height: 30px;
 }
@@ -197,36 +197,48 @@ body {
   flex-direction: column;
 }
 
-@media screen and (min-width: 756px) {
-  .woodImage {
-    width: 400px;
-  }
-
-  .aboutHeader {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-  }
-  .aboutHeader h1 {
-    font-size: 80px;
-  }
-
+@media screen and (min-width: 750px) {
   .imageAndText {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .descriptionTextAbout p {
+    width: 400px;
   }
 
   .woodImage {
-    height: 500px;
+    width: 300px;
+    height: 300px;
+    margin-left: 80px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .about-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .about-container .aboutHeader {
+    display: flex;
+    justify-content: center;
+  }
+  .about-container .aboutHeader h1 {
+    font-size: 80px;
+  }
+  .about-container .woodImage {
     width: 500px;
-    border-radius: 0;
+    height: 300px;
+  }
+  .about-container h3 {
+    font-size: 40px;
   }
 
-  .loremTextAbout p {
-    width: 500px;
-  }
-  .loremTextAbout h3 {
-    font-size: 40px;
+  .line {
+    border: 2px solid white;
+    position: relative;
+    left: 55%;
+    transform: rotate(90deg);
   }
 }
 * {

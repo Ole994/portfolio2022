@@ -82,10 +82,6 @@ body {
   color: white;
 }
 
-.imageAndDescription1 {
-  margin-bottom: 50px;
-}
-
 .loremP {
   margin-top: 20px;
   padding-left: 20px;
@@ -127,13 +123,6 @@ body {
   .imageAndDescription1 .loremP,
 .imageAndDescription2 .loremP {
     width: 90%;
-    padding-left: 40px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .imageAndDescription1,
-.imageAndDescription2 {
-    width: 80%;
     padding-left: 40px;
   }
 }

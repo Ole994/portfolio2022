@@ -48,13 +48,17 @@ body {
 
 //////////////////////
 .h2Home {
-  margin-top: 20px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .headerP {
   font-size: large;
   font-weight: bold;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .ProjectWrapeer {
@@ -76,7 +80,7 @@ body {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   border-radius: 8px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .imageAndDescription1 {
@@ -100,6 +104,8 @@ body {
   .ProjectWrapeer {
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
     padding: 60px;
   }
 
@@ -127,19 +133,10 @@ body {
   .imageAndDescription2 {
     margin: 0;
   }
-
-  .ProjectWrapeer {
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-  }
 }
 
 @media screen and (max-width: 1200px) {
   .imageAndDescription1,
   .imageAndDescription2 {
-  }
-
-  .blogImage {
   }
 }

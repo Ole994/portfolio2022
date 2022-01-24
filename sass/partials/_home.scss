@@ -1,6 +1,6 @@
 .backgroundImage {
   background-image: url(/images/Homepage-background-ole\ portfolio-pixlr.jpg);
-  height: 70vh;
+  height: 90vh;
   background-position: center;
   background-size: cover;
   box-shadow: rgba(30, 127, 218, 0.774) 1.95px 1.95px 2.6px;
@@ -49,7 +49,6 @@ body {
 //////////////////////
 .h2Home {
   margin-top: 20px;
-  margin-bottom: 30px;
 }
 
 .headerP {
@@ -58,22 +57,15 @@ body {
   margin-bottom: 20px;
 }
 
-.mainContent {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
 .ProjectWrapeer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100%;
 }
 
 .blogImage {
-  width: 100%;
   border-radius: 10px;
+  width: 100%;
 }
 
 .imageAndDescription1,
@@ -81,22 +73,19 @@ body {
   p {
     color: white;
   }
-  // background-color: rgb(133, 236, 236);
-  width: 80%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   border-radius: 8px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .imageAndDescription1 {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
-.borderHome {
-  border-bottom: 2px solid rgb(255, 255, 255);
+.loremP {
+  margin-top: 20px;
 }
-
 @media screen and (min-width: 756px) {
   .h1Home {
     h1 {
@@ -128,7 +117,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     height: 400px;
   }
 
@@ -147,17 +135,11 @@ body {
   }
 }
 
-.mainContent {
-  width: 100%;
-}
-
 @media screen and (max-width: 1200px) {
   .imageAndDescription1,
   .imageAndDescription2 {
-    width: 60%;
   }
 
   .blogImage {
-    width: 100%;
   }
 }

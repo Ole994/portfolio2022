@@ -1,6 +1,6 @@
 .backgroundImage {
   background-image: url(/images/Homepage-background-ole\ portfolio-pixlr.jpg);
-  height: 70vh;
+  height: 90vh;
   background-position: center;
   background-size: cover;
   box-shadow: rgba(30, 127, 218, 0.774) 1.95px 1.95px 2.6px;
@@ -48,7 +48,6 @@ body {
 
 .h2Home {
   margin-top: 20px;
-  margin-bottom: 30px;
 }
 
 .headerP {
@@ -57,30 +56,22 @@ body {
   margin-bottom: 20px;
 }
 
-.mainContent {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
 .ProjectWrapeer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100%;
 }
 
 .blogImage {
-  width: 100%;
   border-radius: 10px;
+  width: 100%;
 }
 
 .imageAndDescription1,
 .imageAndDescription2 {
-  width: 80%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   border-radius: 8px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .imageAndDescription1 p,
 .imageAndDescription2 p {
@@ -88,11 +79,11 @@ body {
 }
 
 .imageAndDescription1 {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
-.borderHome {
-  border-bottom: 2px solid white;
+.loremP {
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 756px) {
@@ -139,20 +130,6 @@ body {
     height: 100%;
   }
 }
-.mainContent {
-  width: 100%;
-}
-
-@media screen and (max-width: 1200px) {
-  .imageAndDescription1,
-.imageAndDescription2 {
-    width: 60%;
-  }
-
-  .blogImage {
-    width: 100%;
-  }
-}
 .natureBackground {
   background-image: url(/images/nature-portfolio-pixlr.jpg);
   height: 50vh;
@@ -183,8 +160,8 @@ body {
 }
 
 .descriptionTextAbout p {
-  padding: 35px;
-  line-height: 30px;
+  padding: 10px;
+  line-height: 25px;
 }
 
 .descriptionOle h3 {
@@ -227,18 +204,11 @@ body {
     font-size: 80px;
   }
   .about-container .woodImage {
-    width: 500px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
   }
   .about-container h3 {
     font-size: 40px;
-  }
-
-  .line {
-    border: 2px solid white;
-    position: relative;
-    left: 55%;
-    transform: rotate(90deg);
   }
 }
 * {
@@ -342,7 +312,7 @@ body {
   color: #fff;
 }
 
-@media screen and (max-width: 756px) {
+@media screen and (max-width: 900px) {
   .toggle {
     width: 50px;
     height: 50px;

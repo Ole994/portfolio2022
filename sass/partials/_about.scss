@@ -31,8 +31,8 @@
 }
 .descriptionTextAbout {
   p {
-    padding: 35px;
-    line-height: 30px;
+    padding: 10px;
+    line-height: 25px;
   }
 }
 
@@ -82,20 +82,12 @@
     }
 
     .woodImage {
-      width: 500px;
-      height: 300px;
+      width: 400px;
+      height: 400px;
     }
 
     h3 {
       font-size: 40px;
     }
-  }
-
-  .line {
-    border: 2px solid white;
-    position: relative;
-    left: 55%;
-
-    transform: rotate(90deg);
   }
 }

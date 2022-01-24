@@ -96,6 +96,10 @@ body {
     font-size: 40px;
   }
 
+  .h2Home {
+    font-size: 30px;
+  }
+
   .shortDescription {
     font-size: 25px;
   }
@@ -109,26 +113,28 @@ body {
   }
 
   .blogImage {
-    width: 500px;
+    width: 300px;
     height: 200px;
   }
 
   .imageAndDescription1,
 .imageAndDescription2 {
-    width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 400px;
   }
-
-  .imageAndDescription1 {
-    margin: 0;
+  .imageAndDescription1 .loremP,
+.imageAndDescription2 .loremP {
+    width: 90%;
+    padding-left: 40px;
   }
-
-  .imageAndDescription2 {
-    margin: 0;
+}
+@media screen and (max-width: 1200px) {
+  .imageAndDescription1,
+.imageAndDescription2 {
+    width: 80%;
+    padding-left: 40px;
   }
 }
 .natureBackground {
@@ -145,7 +151,8 @@ body {
 }
 .aboutHeader h1 {
   margin-top: 100px;
-  font-size: 40px;
+  font-size: 80px;
+  text-align: center;
 }
 
 .natureImage {
@@ -167,7 +174,7 @@ body {
 
 .descriptionOle h3 {
   margin-top: 20px;
-  margin-left: 35px;
+  margin-left: 10px;
 }
 
 .about-container {
@@ -183,6 +190,7 @@ body {
   }
 
   .descriptionTextAbout p {
+    margin-top: 15px;
     width: 400px;
   }
 
@@ -197,19 +205,17 @@ body {
     display: flex;
     justify-content: space-around;
   }
-  .about-container .aboutHeader {
-    display: flex;
-    justify-content: center;
+  .about-container .woodImage {
+    width: 300px;
+    height: 300px;
   }
-  .about-container .aboutHeader h1 {
+
+  .aboutMe {
     font-size: 80px;
   }
-  .about-container .woodImage {
-    width: 400px;
-    height: 400px;
-  }
-  .about-container h3 {
-    font-size: 40px;
+
+  .aboutHeader h1 {
+    font-size: 80px;
   }
 }
 * {

@@ -46,7 +46,6 @@ body {
   color: white;
 }
 
-//////////////////////
 .h2Home {
   margin-top: 50px;
   display: flex;
@@ -98,6 +97,10 @@ body {
     }
   }
 
+  .h2Home {
+    font-size: 30px;
+  }
+
   .shortDescription {
     font-size: 25px;
   }
@@ -110,34 +113,29 @@ body {
     padding: 60px;
   }
 
-  .loremP {
-  }
-
   .blogImage {
-    width: 500px;
+    width: 300px;
     height: 200px;
   }
   .imageAndDescription1,
   .imageAndDescription2 {
-    width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 400px;
-  }
 
-  .imageAndDescription1 {
-    margin: 0;
-  }
-
-  .imageAndDescription2 {
-    margin: 0;
+    .loremP {
+      width: 90%;
+      padding-left: 40px;
+    }
+    // height: 400px;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .imageAndDescription1,
   .imageAndDescription2 {
+    width: 80%;
+    padding-left: 40px;
   }
 }
